@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+
+.<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Readings Journal | Dr. Ehtasham Khan</title>
+<title>READINGS | Dr. Ehtasham Khan</title>
 
 <style>
 *{
@@ -22,49 +23,65 @@ header{
 background:#002147;
 color:white;
 padding:20px;
-text-align:center;
 }
 
-header h1{
-font-size:50px;
+.nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin:10px;
 }
 
 .hero{
 background:linear-gradient(135deg,#002147,#004080);
 color:white;
-text-align:center;
 padding:60px 20px;
 }
 
-.hero img{
-width:300px;
-max-width:90%;
-border-radius:12px;
-margin:20px 0;
-box-shadow:0 0 20px rgba(255,255,255,.3);
-}
-
-.hero p{
-max-width:800px;
+.hero-content{
+max-width:1200px;
 margin:auto;
-font-size:18px;
-line-height:1.8;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:30px;
 }
 
-.price{
-font-size:45px;
-font-weight:bold;
-color:#FFD700;
-margin:20px 0;
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+min-width:300px;
+}
+
+.hero-image img{
+width:320px;
+max-width:100%;
+border-radius:10px;
+box-shadow:0 0 20px rgba(255,255,255,.3);
 }
 
 .btn{
 display:inline-block;
-padding:14px 28px;
+padding:14px 25px;
+border-radius:6px;
 text-decoration:none;
-border-radius:8px;
+margin-top:15px;
+margin-right:10px;
 font-weight:bold;
-margin:10px;
 }
 
 .buy{
@@ -78,32 +95,23 @@ color:#002147;
 }
 
 .section{
+max-width:1200px;
+margin:40px auto;
+padding:0 20px;
+}
+
+.card{
 background:white;
-max-width:1100px;
-margin:25px auto;
-padding:30px;
-border-radius:12px;
+padding:25px;
+border-radius:10px;
 box-shadow:0 2px 10px rgba(0,0,0,.1);
+margin-bottom:20px;
 }
 
-.section h2{
-color:#002147;
-margin-bottom:15px;
-}
-
-.section ul{
-padding-left:20px;
-}
-
-.section li{
-margin:10px 0;
-}
-
-.review{
-background:#f2f2f2;
-padding:15px;
-margin-top:10px;
-border-radius:8px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 footer{
@@ -111,7 +119,7 @@ background:#002147;
 color:white;
 text-align:center;
 padding:30px;
-margin-top:30px;
+margin-top:40px;
 }
 </style>
 </head>
@@ -119,100 +127,115 @@ margin-top:30px;
 <body>
 
 <header>
-<h1>READINGS</h1>
+<div class="nav">
+<div>
+<h2>READINGS</h2>
 <p>A Biannual Journal of English Studies</p>
+</div>
+
+<div>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#articles">Articles</a>
+<a href="#reviews">Reviews</a>
+</div>
+</div>
 </header>
 
 <section class="hero">
 
-<h2>Written By</h2>
-<h1>Dr. Ehtasham Khan</h1>
+<div class="hero-content">
 
-<img src="cover.jpg" alt="Readings Journal Cover">
+<div class="hero-text">
 
-<p>
-Readings is a prestigious academic journal dedicated to English
-Literature, Literary Criticism, Research Studies, Cultural Analysis,
-and Scholarly Writing. It is designed for students, researchers,
-teachers, and literature enthusiasts seeking high-quality academic content.
+<h1 style="font-size:55px;">READINGS</h1>
+
+<h2>Dr. Ehtasham Khan</h2>
+
+<p style="margin-top:20px;font-size:18px;">
+A prestigious academic journal featuring literary criticism,
+research articles, English studies and scholarly discussions.
 </p>
 
-<div class="price">₹199</div>
+<h1 style="margin-top:20px;color:#FFD700;">
+₹199
+</h1>
 
-<a href="#" class="btn buy">Buy Now</a>
+<a href="#" class="btn buy">
+Buy Now
+</a>
 
-<a href="Environment%20%26%20Ecology%20(Quick%20Book)-For%20web-1.pdf" class="btn preview">
+<a href="readings-journal.pdf" class="btn preview">
 Preview PDF
 </a>
 
+</div>
+
+<div class="hero-image">
+<img src="cover.jpg" alt="Journal Cover">
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
+<section id="about" class="section">
+
+<div class="card">
+
 <h2>About The Journal</h2>
 
 <p>
-Readings is a respected journal of English Studies that presents
-valuable research articles, literary criticism, comparative studies,
-and academic discussions. It aims to promote quality scholarship
-and intellectual engagement among readers.
+Readings is a respected academic journal dedicated to English
+literature, criticism, culture and scholarly research.
 </p>
 
-</section>
-
-<section class="section">
-<h2>Featured Articles</h2>
-
-<ul>
-<li>Politics of Human Relations</li>
-<li>The Existential Predicament</li>
-<li>Cry, The Beloved Country</li>
-<li>Social Realism in The Foreigner</li>
-<li>Ice-Candy-Man: Partition and Identity</li>
-<li>Donne and Eliot: A Study in Parallelism</li>
-</ul>
+</div>
 
 </section>
 
-<section class="section">
-<h2>Why Purchase This Journal?</h2>
+<section id="articles" class="section">
 
-<ul>
-<li>Premium Academic Content</li>
-<li>Research-Oriented Articles</li>
-<li>English Literature Studies</li>
-<li>Useful for Students and Scholars</li>
-<li>Digital PDF Access</li>
-<li>Lifetime Reading Access</li>
-</ul>
+<h2 style="margin-bottom:20px;">Featured Articles</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Politics of Human Relations</h3>
+<p>P. Rajendra Karmarkar</p>
+</div>
+
+<div class="card">
+<h3>The Existential Predicament</h3>
+<p>Shaheena Tarannum</p>
+</div>
+
+<div class="card">
+<h3>Cry, The Beloved Country</h3>
+<p>Usha Rai</p>
+</div>
+
+<div class="card">
+<h3>Social Realism in The Foreigner</h3>
+<p>Dr. B.C. Pandey</p>
+</div>
+
+</div>
 
 </section>
 
-<section class="section">
+<section id="reviews" class="section">
+
+<div class="card">
 <h2>Reader Reviews</h2>
 
-<div class="review">
-★★★★★ Excellent journal for academic research and literature studies.
+<p>★★★★★ Excellent academic journal.</p>
+<br>
+<p>★★★★★ Valuable literary resource.</p>
+<br>
+<p>★★★★★ Highly recommended for English studies.</p>
+
 </div>
-
-<div class="review">
-★★★★★ Valuable resource for students and researchers.
-</div>
-
-<div class="review">
-★★★★★ High-quality scholarly content and analysis.
-</div>
-
-</section>
-
-<section class="section">
-<h2>About The Author</h2>
-
-<p>
-Dr. Ehtasham Khan is a distinguished academic and researcher known
-for contributions to English Studies, literary criticism, and
-scholarly research. His work promotes academic excellence and
-critical understanding of literature and culture.
-</p>
 
 </section>
 
